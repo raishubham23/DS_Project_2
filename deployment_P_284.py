@@ -39,9 +39,9 @@ st.markdown('''
 </style>
 ''', unsafe_allow_html=True)
 
-pickle_in = open(r"C:\Users\DELL\Desktop\P_284\arima_model.pkl", "rb")
+pickle_in = open(r"C:\Users\Shubh\Project_Internet_Traffic_Prediction\arima_model1.pkl", "rb")
 arima_model = pickle.load(pickle_in)
-daily_data_last_7 = pd.read_csv(r"C:\Users\DELL\Desktop\P_284\daily_data_last_7.csv", header=None)
+daily_data_last_7 = pd.read_csv("C:\Users\Shubh\Project_Internet_Traffic_Prediction\daily_data.csv", header=None)
 
 st.title("Forecast Internet Traffic data")
 st.sidebar.subheader("Select the number of days to Forecast from 2022-Mar-12")
